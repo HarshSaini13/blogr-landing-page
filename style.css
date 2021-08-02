@@ -21,7 +21,35 @@ h3 {
   text-align: center;
   font-weight: 600;
 }
+.register {
+    display: none;
+}
+#nav-close {
+    display: block;
+    color: white;
+}
+.show{
+    display: block;
+}
 
+nav {
+    display: none;
+    /* display: block;
+    background-color: white;
+    text-align: center;
+    font-family: var(--overpass);
+    box-shadow: 0px 10px 20px -3px hsl(353, 41%, 48%);
+    border-radius: 7px;
+    font-size: 1.3em;
+    color: hsl(208, 49%, 24%);
+    padding: 20px; */
+  }
+  /* .whitearrow {
+      display: none;
+  }
+  .puchipoo {
+      display: block;
+} */
 h1 {
   font-family: var(--overpass);
   color: white;
@@ -29,11 +57,6 @@ h1 {
   text-align: center;
   margin-top: 100px;
 }
-
-nav {
-  display: none;
-}
-
 header {
   background-image: url(images/bg-pattern-intro.svg),
     linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
@@ -43,7 +66,7 @@ header {
   padding: 50px 25px 125px;
   border-bottom-left-radius: 90px;
 }
-header > i {
+header i:nth-of-type(1) {
   position: absolute;
   top: 50px;
   right: 25px;
@@ -188,6 +211,12 @@ footer {
 .desktop {
   display: none;
 }
+.mobile {
+    max-width: 450px;
+}
+.illustration-editor {
+    text-align: center;
+}
 
 
 @media (min-width: 900px) {
@@ -299,11 +328,77 @@ footer {
   }
   header {
     background-image: url(images/bg-pattern-intro.svg),
-      linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+      linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-size: 2000px, cover;
     background-position: 30% 50%;
     background-repeat: no-repeat;
     padding: 50px 25px 125px;
     border-bottom-left-radius: 90px;
   }
+  #nav-toggle {
+      display: none;
+  }
+  #nav-close {
+      display: none;
+  }
+  nav {
+      display: flex;
+  }
+  .sub-items {
+      display: none;
+      position: absolute;
+      color: black;
+      background-color: white;
+      padding: 30px 60px 30px 40px;
+      border-radius: 7px;
+      font-family: var(--ubuntu);
+      line-height: 2;
+      font-weight: 400;
+      top: 30px;
+      left: -10px;
+      box-shadow: 0px 10px 20px -5px hsl(353, 41%, 48%);
+  }
+  .sub-items li:hover {
+      font-weight: 500;
+  }
+  .show {
+      display: block;
+  }
+  .nav-item {
+      cursor: pointer;
+      display: inline-block;
+      color: white;
+      font-family: var(--ubuntu);
+      margin: 0px 20px;
+      font-weight: 500;
+      position: relative;
+  }
+  .nav-item:hover {
+    text-decoration: underline 2px;
+  }
+  .navinav {
+      display: grid;
+      margin: 0px 50px;
+      grid-template-columns: 1fr 5.5fr 3.5fr;
+      align-items: center;
+  }
+  .register {
+      display: flex;
+      align-items: center;
+      justify-self: end;
+    }
+    .register .learn-more {
+        border: 0px;
+        padding: 15px 25px;
+        margin-right: 20px;
+    }
+    h1 {
+        font-size: 2.7em;
+    }
+    .darkarrow {
+        display: none;
+    }
+    .ghuumna {
+        transform: rotate(180deg);
+    }
 }

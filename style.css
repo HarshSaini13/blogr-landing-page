@@ -37,6 +37,7 @@ h3 {
 
 nav {
     display: none;
+    position: relative;
     /* display: block;
     background-color: white;
     text-align: center;

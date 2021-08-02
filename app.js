@@ -13,15 +13,15 @@ for (let i=0; i<navItem.length; i++) {
 }
 
 
-hamburger[0].addEventListener("click", function () {
-    for(let i=0; i<two.length; i++) {
-        two[i].classList.toggle("show");
-        hamburger[0].style.display = "none";
-    }
-})
+// hamburger[0].addEventListener("click", function () {
+//     for(let i=0; i<two.length; i++) {
+//         two[i].classList.toggle("show");
+//         hamburger[0].style.display = "none";
+//     }
+// })
 
-hamburger[1].addEventListener("click", function() {
-    two[0].classList.toggle("show");
-    two[1].classList.toggle("show");
-    hamburger[0].style.display = "block";
-})
+// hamburger[1].addEventListener("click", function() {
+//     two[0].classList.toggle("show");
+//     two[1].classList.toggle("show");
+//     hamburger[0].style.display = "block";
+// })

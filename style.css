@@ -24,6 +24,9 @@ h3 {
 .register {
     display: none;
 }
+#nav-toggle {
+    display: block;
+}
 #nav-close {
     display: block;
     color: white;
